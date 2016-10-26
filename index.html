@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html lang="en-US">
+        
+        <head>
+            <title>Resume</title>
+            <link rel="stylesheet" type="text/css" href="main.css">
+            <link rel="icon" href="logo.png">
+            <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+            <script type="text/javascript" src="main.js"></script>
+            <script src="jquery-2.2.2.min.js"></script>
+        </head>
+        <body>
+            <script>
+                function openNav(){
+                    document.getElementById("mySidenav").style.width = "250px";
+                }
+                function closeNav(){
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+                function openhorizontalNav(){
+                    document.getElementById("myHorizontalnav").style.height = "250px";
+                    
+                }
+                function closehorizontalNav(){
+                    document.getElementById("myHorizontalnav").style.height = "0";
+                }
+            </script>
+            <div id="myHorizontalnav" class="horizontalnav">
+                <ul>
+                    <li><a href="index.html" class="active" >Home</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li onclick="openNav()" class="sideNav" ><a href="javascript:void(0)" class="closehorizontalbutton" onclick="closehorizontalNav()">&#9776 directory</a></li>
+                </ul>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" onclick="openhorizontalNav()">&times;</a>
+                <a href="#">Skills</a>
+                <a href="#">References</a>
+                <a href="#">Bio</a>
+                <a href="#">Experience</a>
+            </div>
+            
+            <div id="main">
+                
+            </div>
+        </body>
+    </html>
